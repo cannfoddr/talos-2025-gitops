@@ -43,7 +43,12 @@ spec:
     gatewayAPI:
       enabled: true
     hubble:
-      enabled: false
+      enabled: true
+      relay:
+        enabled: true
+        replicas: 1
+      ui:
+        enabled: true
     ipam:
       mode: kubernetes
     ipv4NativeRoutingCIDR: "10.41.120.0/16"
